@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>第二章 30个可视化图表 Python 复现</title>
+<style>
+  body { font-family: "Microsoft YaHei", sans-serif; margin: 0; padding: 20px;
+         background: #f5f5f5; color: #333; }
+  h1 { text-align: center; color: #2C3E50; border-bottom: 3px solid #4A90E2;
+       padding-bottom: 15px; }
+  .info { text-align: center; color: #666; margin-bottom: 25px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1400px; margin: 0 auto; }
+  .card { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          overflow: hidden; transition: transform 0.2s; }
+  .card:hover { transform: translateY(-5px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+  .card img { width: 100%; display: block; }
+  .card .label { padding: 10px 15px; font-size: 13px; font-weight: bold; color: #2C3E50;
+                 border-top: 1px solid #eee; }
+  .card .label .num { color: #4A90E2; }
+</style>
+</head>
+<body>
+<h1>《Excel数据可视化 — 从图表到数据大屏》第二章<br>30个可视化图表 Python 复现</h1>
+<div class="info">数据来源：第二章 图表(前15).xlsx + 第二章 图表(后15).xlsx ｜ 绘图库：matplotlib + numpy + scipy ｜ 共 30 张图表</div>
+<div class="grid">
+  <div class="card"><img src="charts/01_渐变柱形图.png" alt="渐变柱形图"><div class="label"><span class="num">图01</span> 渐变柱形图</div></div>
+  <div class="card"><img src="charts/02_带均值柱形图.png" alt="带均值柱形图"><div class="label"><span class="num">图02</span> 带均值柱形图</div></div>
+  <div class="card"><img src="charts/03_渐变圆角柱形图.png" alt="渐变圆角柱形图"><div class="label"><span class="num">图03</span> 渐变圆角柱形图</div></div>
+  <div class="card"><img src="charts/04_标注柱形图.png" alt="标注柱形图"><div class="label"><span class="num">图04</span> 标注柱形图</div></div>
+  <div class="card"><img src="charts/05_层叠柱形图.png" alt="层叠柱形图"><div class="label"><span class="num">图05</span> 层叠柱形图</div></div>
+  <div class="card"><img src="charts/06_蝴蝶图.png" alt="蝴蝶图"><div class="label"><span class="num">图06</span> 蝴蝶图</div></div>
+  <div class="card"><img src="charts/07_蝴蝶图百分比.png" alt="蝴蝶图百分比"><div class="label"><span class="num">图07</span> 蝴蝶图百分比</div></div>
+  <div class="card"><img src="charts/08_数值百分比.png" alt="数值百分比"><div class="label"><span class="num">图08</span> 数值百分比</div></div>
+  <div class="card"><img src="charts/09_对比柱形图.png" alt="对比柱形图"><div class="label"><span class="num">图09</span> 对比柱形图</div></div>
+  <div class="card"><img src="charts/10_甘特图.png" alt="甘特图"><div class="label"><span class="num">图10</span> 甘特图</div></div>
+  <div class="card"><img src="charts/11_平滑折线图.png" alt="平滑折线图"><div class="label"><span class="num">图11</span> 平滑折线图</div></div>
+  <div class="card"><img src="charts/12_菱形走势图.png" alt="菱形走势图"><div class="label"><span class="num">图12</span> 菱形走势图</div></div>
+  <div class="card"><img src="charts/13_对比折线图.png" alt="对比折线图"><div class="label"><span class="num">图13</span> 对比折线图</div></div>
+  <div class="card"><img src="charts/14_单值圆环图.png" alt="单值圆环图"><div class="label"><span class="num">图14</span> 单值圆环图</div></div>
+  <div class="card"><img src="charts/15_水球图.png" alt="水球图"><div class="label"><span class="num">图15</span> 水球图</div></div>
+  <div class="card"><img src="charts/16_波浪水球图.png" alt="波浪水球图"><div class="label"><span class="num">图16</span> 波浪水球图</div></div>
+  <div class="card"><img src="charts/17_玉玦图.png" alt="玉玦图"><div class="label"><span class="num">图17</span> 玉玦图</div></div>
+  <div class="card"><img src="charts/18_跑道图.png" alt="跑道图"><div class="label"><span class="num">图18</span> 跑道图</div></div>
+  <div class="card"><img src="charts/19_南丁格尔圆饼图.png" alt="南丁格尔圆饼图"><div class="label"><span class="num">图19</span> 南丁格尔圆饼图</div></div>
+  <div class="card"><img src="charts/20_南丁格尔圆环图.png" alt="南丁格尔圆环图"><div class="label"><span class="num">图20</span> 南丁格尔圆环图</div></div>
+  <div class="card"><img src="charts/21_南丁格尔PPT版.png" alt="南丁格尔PPT版"><div class="label"><span class="num">图21</span> 南丁格尔PPT版</div></div>
+  <div class="card"><img src="charts/22_仪表盘图.png" alt="仪表盘图"><div class="label"><span class="num">图22</span> 仪表盘图</div></div>
+  <div class="card"><img src="charts/23_柱形折线图.png" alt="柱形折线图"><div class="label"><span class="num">图23</span> 柱形折线图</div></div>
+  <div class="card"><img src="charts/24_目标柱形图.png" alt="目标柱形图"><div class="label"><span class="num">图24</span> 目标柱形图</div></div>
+  <div class="card"><img src="charts/25_子弹图.png" alt="子弹图"><div class="label"><span class="num">图25</span> 子弹图</div></div>
+  <div class="card"><img src="charts/26_柱形圆.png" alt="柱形圆"><div class="label"><span class="num">图26</span> 柱形圆</div></div>
+  <div class="card"><img src="charts/27_簇状柱形折线图.png" alt="簇状柱形折线图"><div class="label"><span class="num">图27</span> 簇状柱形折线图</div></div>
+  <div class="card"><img src="charts/28_复合柱形图.png" alt="复合柱形图"><div class="label"><span class="num">图28</span> 复合柱形图</div></div>
+  <div class="card"><img src="charts/29_滑珠图.png" alt="滑珠图"><div class="label"><span class="num">图29</span> 滑珠图</div></div>
+  <div class="card"><img src="charts/30_对比滑珠图.png" alt="对比滑珠图"><div class="label"><span class="num">图30</span> 对比滑珠图</div></div>
+</div>
+</body>
+</html>
